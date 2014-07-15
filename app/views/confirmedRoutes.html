@@ -1,0 +1,23 @@
+<div ng-controller="MainCtrl">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Pickup City</th>
+            <th>Pickup State</th>
+            <th>Dropoff City</th>
+            <th>Dropoff State</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="route in confirmedRoutes">
+            <td>{{route.pickupCity}}</td>
+            <td>{{route.pickupState}}</td>
+            <td>{{route.dropoffCity}}</td>
+            <td>{{route.dropoffState}}</td>
+            <td>{{route.price}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary" ng-click="uploadRoutes()">Upload to DB</button>
+</div>

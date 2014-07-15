@@ -1,0 +1,54 @@
+        <div class="container-fluid" ng-controller="MainCtrl">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="panel panel-primary">
+
+                    <div class="panel-heading">Routes in the Database</div>
+
+                    <div id="ng-table-config">
+                        <table ng-table="tableRoute" class="table">
+                            <tr ng-repeat="route in $data">
+                                <td data-title="'Pickup City'" sortable="'pcity'">{{route.pcity}}</td>
+                                <td data-title="'Pickup State'" sortable="'pstate'">{{route.pstate}}</td>
+                                <td data-title="'Dropoff City'" sortable="'dcity'">{{route.dcity}}</td>
+                                <td data-title="'Dropoff State'" sortable="'dstate'">{{route.dstate}}</td>
+                                <td data-title="'P/M'">{{route.pricemiles}}</td>
+                                <td data-title="'Miles'">{{route.miles}}</td>
+                                <td data-title="'Price'" sortable="'price'">{{route.price}}</td>
+                                <td data-title="'Date'" sortable="'cdate'">{{route.cdate|date:'mediumDate'}}</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> <!-- Contain the General Route Table -->
+
+        <div class="row">
+
+                <div class="col-md-12">
+
+                   <div class="navbar navbar-default">
+                    <form class="navbar-form">
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <span class="btn btn-primary btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" ng-file-select="onFileSelect($files)" /></span>
+                            <span class="fileinput-filename"></span>
+                            <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                        </div>
+                    </form>
+                   </div>
+
+                </div>
+
+            </div> <!-- Contain the Upload Form -->
+
+        </div>
+
+
+
+

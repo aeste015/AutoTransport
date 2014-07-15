@@ -1,0 +1,22 @@
+<div ng-controller="MainCtrl">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Pickup Zipcode</th>
+            <th>Dropoff Zipcode</th>
+            <th>P/M</th>
+            <th>Miles</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="route in rawRoutes">
+            <td>{{route.pickupZipcode}}</td>
+            <td>{{route.dropoffZipcode}}</td>
+            <td>{{route.price_miles}}</td>
+            <td>{{route.miles}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <button ng-click="getRoutes()">Continue</button>
+</div>

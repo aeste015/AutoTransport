@@ -1,0 +1,144 @@
+/* Space out content a bit */
+body {
+  padding-top: 3px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.sidemenu {
+    margin-top: 51px;
+}
+
+.content {
+    margin-left: 300px;
+    margin-top: 60px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.table td {
+    text-align: center;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+.panel a {
+    color: #f1eff0;
+}
+
+.panel a:hover {
+    text-decoration:none;
+    color: #0b0909;
+}
+
+.panel .table td {
+    border-color: #f3f3f3;
+    text-align: left;
+}
+
+.panel .table a {
+    color: #6d717a;
+}
+
+.panel .table a:hover {
+    text-decoration: none;
+    color: #0b0909;
+}
+
+#side-menu {
+    padding: 10px;
+}
+
+#ng-table-config {
+    padding: 10px !important;
+}
